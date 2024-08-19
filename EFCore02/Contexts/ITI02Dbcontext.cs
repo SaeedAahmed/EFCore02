@@ -12,7 +12,7 @@ namespace EFCore02.Contexts
     internal class ITI02Dbcontext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server = . ; Database = EF02 ; Trusted_Connection= true ; Encrypt=False");
+              => optionsBuilder.UseSqlServer("Server = . ; Database = EF02 ; Trusted_Connection= true ; Encrypt=False");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
