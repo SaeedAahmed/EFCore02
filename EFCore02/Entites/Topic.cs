@@ -16,5 +16,6 @@ namespace EFCore02.Entites
         [Column(TypeName = "varchar")]
         [MaxLength(50)]
         public string Name { get; set; }
+        public ICollection<Course> Course { get; set; }
     }
 }

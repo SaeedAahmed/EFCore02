@@ -22,6 +22,8 @@ namespace EFCore02.Entites
         public string Address { get; set; }
         [Range(22, 60)]
         public int Age { get; set; }
-        public int Dep_id { get; set; }
+        [ForeignKey("Department")]
+        public int Dep_Id { get; set; }
+        public Department Department { get; set; }
     }
 }
